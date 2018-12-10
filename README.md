@@ -1,4 +1,4 @@
-# Visualising the Tonal Characteristics of Sonic Youth]
+# Visualising the Tonal Characteristics of Sonic Youth
 
 R code, data, and Jupyter Notebook
 
