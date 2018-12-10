@@ -138,7 +138,7 @@ tuningsOverCareer <- tuningsOverCareer %>%
 tuningsOverCareer %>% 
     ggplot(aes(String, fct_rev(factor(Album, unique(data$Album))))) +
     geom_raster(aes(fill = factor(Tuning)), interpolate = TRUE) +
-    scale_fill_hue(c=60,l=60, name = 'Score') +
+    scale_fill_hue(c=60,l=60, name = 'Tuning') +
     ylab('Album') +
     theme(plot.title = element_text(hjust = 0.5, size=10)) +
     ggtitle("Sonic Youth's guitar tunings by Album")
