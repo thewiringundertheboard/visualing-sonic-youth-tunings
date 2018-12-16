@@ -95,7 +95,7 @@ tuningsByAlbum$Tuning <- unlist(lapply(tuningsByAlbum$Tuning, function(x) toStri
 tuningsCount = tuningsByAlbum %>% count(Tuning)
 
 # plot bar chart of each tuning by album, ordered by most used
-tuningsCount %>% ggplot(aes(reorder(Tuning, n), n, fill=n)) + 
+tuningsCount %>% ggplot(aes(reorder(Tuning, n), n, fill='red')) + 
     geom_bar(stat='Identity') + 
     theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
     xlab('Tuning') +
