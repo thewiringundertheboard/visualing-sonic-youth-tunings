@@ -222,7 +222,8 @@ popularTuningsByAlbum %>%
     geom_bar(stat='identity') +
     facet_wrap(~ factor(Album, unique(data$Album))) +
     coord_flip() +
-    theme(plot.title = element_text(hjust = 0.5, size=10)) +
+    theme(plot.title = element_text(hjust = 0.5, size=10),
+          strip.text.x = element_text(size = 8)) +
     ggtitle('Usage of the most popular tunings over Sonic Youth\'s career by album') +
     ylab('Usage frequency')
 
