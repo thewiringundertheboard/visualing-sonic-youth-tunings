@@ -77,12 +77,6 @@ ggsave(paste(path, paste(singleTuningToPlot, collapse=''),  ".png", sep=''), dev
 
 # plot the unique tunings ----
 
-# get the unique tunings
-uniqueTunings <- unique(data %>% select(matches('String')))
-
-# sort by lowest String6
-uniqueTunings <- uniqueTunings %>% arrange(String6)
-
 # make a tibble of all tunings by album
 tuningsByAlbum <- tibble(
     'Album' = data$Album, 
